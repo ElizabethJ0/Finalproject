@@ -6,9 +6,16 @@ print(user +" you're in the 1920's")
 #user = input("Enter username: ").lower()
 loop = True
 def train():
-  print("You are on a train going to Boston and New York. Do you want to stop in Boston or New York? ")
-  location = input("Boston or New York ").lower()
+  print("You are on a train going to Boston and New York.")
+  print("Do you want to stop in Boston or New York?")
+  location = input("Boston or New York: ").lower()
   if location == "boston":
+    boston()
+  else:
+      print("You feel asleep on the train. The next and last stop on this train is Boston.")
+      boston()
+    
+def boston():    
     print("You just got off the train in Boston ")
     activity = input("Do you want to go to a baseball game or jazz club?")
     if activity == "baseball game" or activity == "baseball":
@@ -60,7 +67,26 @@ while loop:
       print("Invalid")
       loop = False
   elif choice == "no":
-    print("Staying")
+    print("To stay you will have to answer all three questions correctly. If you don't answer correctly...")
+    riddle = input("A sphere has three, a circle has two, a point has zero. What is it?\n A.Sides\n B.Line\n C.Dimensions\n D.All of the above\n").lower()
+    if riddle == "dimensions" or riddle == "c":
+      print("Lucky guess. You get to move onto the next question.")
+      cereal = input("Is cereal a soup? ").lower()
+      if cereal == "no":
+        print("Correct, you have the right opinion. Lets see if you can answer the next question correctly.")
+      else:
+        print("Really? It's not a soup. For that you are being sent to the dinosaur age, have fun with the meteor!")
+        
+      
+      
+    else:
+      print("Wrong choice. Prepare to be transported back to the present day in five seconds")
+   
+  
+      
+
+    
+    
     loop = False
   else:
     print("Invalid")
