@@ -48,7 +48,7 @@ def boston():
 
     
 def horse():
-    print(user + " you want to ride a horse? Well, you decide to ride a horse to get back to the present day. You go into the dark woods when you find a two-way road. Man, it's almost like you're playing a game with how many story-dependent choices you have to make.")
+    print("  " + user + " you want to ride a horse? Well, you decide to ride a horse to get back to the present day. You go into the dark woods when you find a two-way road. Man, it's almost like you're playing a game with how many story-dependent choices you have to make.")
 
     road = input("Looking both ways, do you go right or left?").lower()
 
