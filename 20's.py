@@ -12,14 +12,14 @@ def train():
   if location == "boston":
     boston()
   else:
-      print("You feel asleep on the train. The next and last stop on this train is Boston. Have fun getting back to the present day in Boston. ")
+      print("You fell asleep on the train. The next and last stop on this train is Boston. Have fun getting back to the present day in Boston. ")
       boston()
     
 def boston():    
     print("You just got off the train in Boston ")
     activity = input("Do you want to go to a baseball game or jazz club? ")
     if activity == "baseball game" or activity == "baseball" or activity == "b":
-      print("You are watching the baseball and need to find a device to take you back to the present day. You do not find the device but when you look up you are hit by a baseball, instantly taking you back to the present day. ")
+      print("You are watching the baseball game and need to find a device to take you back to the present day. You do not find the device but when you look up you are hit by a baseball, instantly taking you back to the present day. ")
     else:
       print("You're in the jazz club when you are pulled on stage, now forced to play one of four instruments.")
       instrument = input("What instrument? Guitar, drums, singer, or saxophone ").lower()
